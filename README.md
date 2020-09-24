@@ -6,7 +6,7 @@ https://zenn.dev/serima
 
 If my article is outdated or incorrect, feel free to create a pull request for it.
 
-1. Fork a GitHub repository.
+1. Fork this repository.
 2. Clone the forked repository to your local system.
 3. Add a Git remote for the original repository.
 4. Create a feature branch in which to place your changes.
