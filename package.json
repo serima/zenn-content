@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "zenn-cli": "^0.1.34"
+  },
+  "devDependencies": {
+    "textlint": "^11.7.6",
+    "textlint-rule-preset-ja-technical-writing": "^4.0.1"
   }
 }
