@@ -12,11 +12,9 @@ jobs:
       - uses: actions/checkout@v1
       - name: setup-reviewdog
         run: |
-          mkdir -p $HOME/bin && wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh \
-            | sh -s -- -b /usr/local/bin/ v0.9.13
-          apk --update add Git && \
-            rm -rf /var/lib/apt/lists/*
-      - name: installl-textlint
+          mkdir -p $HOME/bin && curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b $HOME/bin
+          echo ::add-path::$HOME/bin
+      - name: install-textlint
         run: |
           cd "$GITHUB_WORKSPACE"
           if [ ! -f "$(npm bin)/textlint" ]; then
